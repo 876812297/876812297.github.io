@@ -19,7 +19,7 @@ theme:
         text: Roboto
         code: Roboto Mono
     favicon: assets/favicon.png
-    icon: #更换logo
+    icon:
         logo: logo
         repo: fontawesome/brands/github
     features:
