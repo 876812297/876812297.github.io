@@ -1,0 +1,101 @@
+site_name: KWeaver
+site_url: https://kw-docs-test.github.io/
+theme:
+    name: material
+#    language: zh
+    palette:
+        - scheme: default
+          primary: indigo
+          accent: indigo
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to dark mode
+        - scheme: slate
+          primary: black
+          accent: indigo
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to light mode
+    font:
+        text: Roboto
+        code: Roboto Mono
+    favicon: assets/favicon.png
+    icon: #更换logo
+        logo: logo
+        repo: fontawesome/brands/github
+    features:
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.expand
+      - navigation.indexes
+      - navigation.sections
+      - navigation.top
+      - search.highlight
+      - search.suggest
+      - search.share
+      - content.code.copy
+      - navigation.footer
+      - navigation.tracking
+plugins:
+  - search
+  - tags  #标签
+markdown_extensions:
+  - admonition
+  - abbr
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - md_in_html
+  - pymdownx.arithmatex:  # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      # linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences # 代码块高亮插件
+  - meta # 支持Markdown文件上方自定义标题标签等
+
+#extra_javascript里有对数学公式的扩展，extra_css里是Css的知识了，及自定义网站格式颜色等
+extra_javascript:
+  - assets/extra.js
+  - assets/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - assets/extra.css
+
+# 代码仓库
+repo_name: github
+repo_url: https://github.com/AISHU-Technology/kweaver
+
+extra:
+  generator: false
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
+
+# 底部日期
+copyright: Copyright &copy; 2013 - 2023 Martin Donath
+
+nav:
+  - index.md
+  - Introduction:
+      - introduction/about_kw.md
+      - introduction/scenes.md
+      - introduction/users.md
+  - Getting Started:
+      - getting_started/knowledge_graphs.md
+      - getting_started/lexicons.md
