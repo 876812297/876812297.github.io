@@ -85,7 +85,6 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - assets/extra.css
-  - assets/swagger-ui-x.css
 
 # 代码仓库
 repo_name: github
@@ -94,11 +93,11 @@ repo_url: https://github.com/AISHU-Technology/kweaver
 extra:
   generator: false
   alternate:
+    - name: 中文
+      lang: zh
     - name: English
       link: /en/
       lang: en
-    - name: 中文
-      lang: zh
 
 # 底部日期
 copyright: Copyright &copy; 2013 - 2023 Martin Donath
