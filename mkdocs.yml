@@ -7,13 +7,13 @@ theme:
           primary: indigo
           accent: indigo
           toggle:
-              icon: material/toggle-switch
+              icon: material/brightness-7
               name: Switch to dark mode
         - scheme: slate
           primary: black
           accent: indigo
           toggle:
-              icon: material/toggle-switch-off-outline
+              icon: material/brightness-4
               name: Switch to light mode
     font:
         text: Roboto
@@ -93,11 +93,11 @@ repo_url: https://github.com/AISHU-Technology/kweaver
 extra:
   generator: false
   alternate:
-    - name: 中文
-      lang: zh
     - name: English
       link: /en/
       lang: en
+    - name: 中文
+      lang: zh
 
 # 底部日期
 copyright: Copyright &copy; 2013 - 2023 Martin Donath
