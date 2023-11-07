@@ -1,0 +1,130 @@
+{
+  "swagger": "2.0",
+  "basePath": "/file",
+  "tags": [{
+    "name": "sys-file-controller",
+    "description": "Sys File Controller"
+  }],
+  "paths": {
+    "/downLoad": {
+      "post": {
+        "tags": ["sys-file-controller"],
+        "summary": "downLoad",
+        "operationId": "downLoadUsingPOST",
+        "consumes": ["application/json"],
+        "produces": ["*/*"],
+        "parameters": [{
+          "in": "body",
+          "name": "sysFile",
+          "description": "sysFile",
+          "required": true,
+          "schema": {
+            "originalRef": "SysFile",
+            "$ref": "#/definitions/SysFile"
+          }
+        }],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "security": [{
+          "Authorization": ["global"]
+        }]
+      }
+    },
+    "/upload": {
+      "post": {
+        "tags": ["sys-file-controller"],
+        "summary": "upload",
+        "operationId": "uploadUsingPOST",
+        "consumes": ["multipart/form-data"],
+        "produces": ["*/*"],
+        "parameters": [{
+          "in": "body",
+          "name": "file",
+          "description": "file",
+          "required": false,
+          "schema": {
+            "type": "string",
+            "format": "binary"
+          }
+        }],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "originalRef": "R«SysFile»",
+              "$ref": "#/definitions/R«SysFile»"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "security": [{
+          "Authorization": ["global"]
+        }]
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Authorization": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "R«SysFile»": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "data": {
+          "originalRef": "SysFile",
+          "$ref": "#/definitions/SysFile"
+        },
+        "msg": {
+          "type": "string"
+        }
+      },
+      "title": "R«SysFile»"
+    },
+    "SysFile": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "title": "SysFile"
+    }
+  }
+}

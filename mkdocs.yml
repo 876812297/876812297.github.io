@@ -50,6 +50,8 @@ plugins:
         - locale: en
           name: English
           build: true
+  - render_swagger:
+      allow_arbitrary_locations : true
 markdown_extensions:
   - admonition
   - abbr
@@ -83,6 +85,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - assets/extra.css
+  - assets/swagger-ui-x.css
 
 # 代码仓库
 repo_name: github
@@ -109,4 +112,7 @@ nav:
   - Getting Started:
       - getting_started/knowledge_graphs.md
       - getting_started/lexicons.md
-# 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
+  - Swagger-UI:
+      - swagger/openapi_yml.md
+      - swagger/openapi_json.md
+# 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
