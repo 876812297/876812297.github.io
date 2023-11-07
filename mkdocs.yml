@@ -95,7 +95,6 @@ extra:
       link: /en/
       lang: en
     - name: 中文
-      link: .
       lang: zh
 
 # 底部日期
