@@ -2,7 +2,6 @@ site_name: KWeaver
 site_url: https://876812297.github.io/
 theme:
     name: material
-#    language: zh
     palette:
         - scheme: default
           primary: indigo
@@ -37,8 +36,20 @@ theme:
       - navigation.footer
       - navigation.tracking
 plugins:
-  - search
-  - tags  #标签
+  - search:
+      lang:
+        - zh
+        - en
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: zh
+          name: 中文
+          build: true
+          default: true
+        - locale: en
+          name: English
+          build: true
 markdown_extensions:
   - admonition
   - abbr
@@ -59,8 +70,8 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences # 代码块高亮插件
   - meta # 支持Markdown文件上方自定义标题标签等
 
@@ -84,7 +95,7 @@ extra:
       link: /en/
       lang: en
     - name: 中文
-      link: /zh/
+      link: .
       lang: zh
 
 # 底部日期
@@ -99,4 +110,4 @@ nav:
   - Getting Started:
       - getting_started/knowledge_graphs.md
       - getting_started/lexicons.md
-# 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
+# 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
