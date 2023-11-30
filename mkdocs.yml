@@ -125,7 +125,7 @@ nav:
       - sdk/knowledge_graphs.md
       - sdk/lexicons.md
   - 错误码:
-      - error_code/knowledge_graphs.md
+      - error_code/http_code.md
       - error_code/lexicons.md
   - FAQ:
       - faq/knowledge_graphs.md
