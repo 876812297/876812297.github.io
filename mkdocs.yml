@@ -1,4 +1,4 @@
-site_name: KWeaver
+site_name: KWeaver技术文档
 site_url: https://876812297.github.io/
 theme:
     name: material
@@ -88,7 +88,7 @@ extra_css:
   - assets/extra.css
 
 # 代码仓库
-repo_name: github
+repo_name: KWeaver
 repo_url: https://github.com/AISHU-Technology/kweaver
 
 extra:
@@ -104,14 +104,36 @@ extra:
 copyright: Copyright &copy; 2013 - 2023 Martin Donath
 
 nav:
-  - index.md
-  - Introduction:
+#  - index.md
+  - 简介:
       - introduction/about_kw.md
       - introduction/scenes.md
       - introduction/users.md
-  - Getting Started:
+  - 快速上手:
       - getting_started/knowledge_graphs.md
       - getting_started/lexicons.md
+  - 入门篇:
+      - basics/knowledge_graphs.md
+      - basics/lexicons.md
+  - 进阶篇:
+      - advanced/knowledge_graphs.md
+      - advanced/lexicons.md
+  - API:
+      - reference/knowledge_graphs.md
+      - reference/lexicons.md
+  - SDK & DEMO:
+      - sdk/knowledge_graphs.md
+      - sdk/lexicons.md
+  - 错误码:
+      - error_code/knowledge_graphs.md
+      - error_code/lexicons.md
+  - FAQ:
+      - faq/knowledge_graphs.md
+      - faq/lexicons.md
+  - 附录:
+      - appendix/knowledge_graphs.md
+      - appendix/lexicons.md
+
   - Swagger-UI:
       - swagger/openapi_yml.md
       - swagger/openapi_json.md
