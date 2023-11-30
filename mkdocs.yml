@@ -81,8 +81,9 @@ markdown_extensions:
 extra_javascript:
   - assets/extra.js
   - assets/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+#  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - assets/tex-mml-chtml.js
+  - assets/baidu-tongji.js
 extra_css:
   - assets/extra.css
 
