@@ -94,10 +94,10 @@ repo_url: https://github.com/AISHU-Technology/kweaver
 
 extra:
   generator: false
-  KWeaver:
-    release: 1.0.0
-  version:
-    method: mike
+#  KWeaver:
+#    release: 1.0.0
+#  version:
+#    method: mike
   alternate:
     - name: English
       link: /en/
