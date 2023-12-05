@@ -1,4 +1,4 @@
-site_name: KWeaver技术文档
+site_name: KWeaver技术手册
 site_url: https://876812297.github.io/
 theme:
     name: material
@@ -35,6 +35,7 @@ theme:
       - content.code.copy
       - navigation.footer
       - navigation.tracking
+      - header.autohide
 plugins:
   - search:
       lang:
@@ -93,6 +94,10 @@ repo_url: https://github.com/AISHU-Technology/kweaver
 
 extra:
   generator: false
+  KWeaver:
+    release: 1.0.0
+  version:
+    method: mike
   alternate:
     - name: English
       link: /en/
@@ -102,6 +107,7 @@ extra:
 
 # 底部日期
 copyright: Copyright &copy; 2013 - 2023 Martin Donath
+
 
 nav:
 #  - index.md
