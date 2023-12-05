@@ -15,6 +15,6 @@ jobs:
       - run: pip install mkdocs-static-i18n
       - run: pip install mkdocs-render-swagger-plugin
       - run: pip install mike
-      - run: mike deploy 1.0.0 -p --rebase
-      - run: mike set-default 1.0.0 -p --rebase
+      - run: mike deploy main -p --rebase
+      - run: mike set-default main -p --rebase
 #      - run: mkdocs gh-deploy --force
