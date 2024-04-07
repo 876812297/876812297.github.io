@@ -1,5 +1,7 @@
-site_name: KWeaver技术手册
+site_name: KWeaver官方技术手册
 site_url: https://876812297.github.io/
+site_description: 价值驱动，认知智能走向开源共创
+
 theme:
     name: material
     palette:
@@ -37,6 +39,23 @@ theme:
       - navigation.tracking
       - header.autohide
 plugins:
+  - macros:
+      # 替换默认的jinja宏标志{{}}，否则类似的地方可能报错
+      # [[% raw %]]
+      j2_block_start_string: '[[%'
+      j2_block_end_string: '%]]'
+      j2_variable_start_string: '[['
+      j2_variable_end_string: ']]'
+      # [[% endraw %]]
+  - mike:
+      # These fields are all optional; the defaults are as below...
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
   - search:
       lang:
         - zh
@@ -53,6 +72,9 @@ plugins:
           build: true
   - render_swagger:
       allow_arbitrary_locations : true
+  - git-revision-date-localized: #最后更新时间
+      type: iso_datetime
+
 markdown_extensions:
   - admonition
   - abbr
@@ -93,11 +115,12 @@ repo_name: KWeaver
 repo_url: https://github.com/AISHU-Technology/kweaver
 
 extra:
+  keywords: '认知智能, 领域框架, AGI时代'
   generator: false
-#  KWeaver:
-#    release: 1.0.0
-#  version:
-#    method: mike
+  KWeaver:
+    release: 1.0.0
+  version:
+    provider: mike
   alternate:
     - name: English
       link: /en/
@@ -107,7 +130,6 @@ extra:
 
 # 底部日期
 copyright: Copyright &copy; 2013 - 2023 Martin Donath
-
 
 nav:
 #  - index.md
